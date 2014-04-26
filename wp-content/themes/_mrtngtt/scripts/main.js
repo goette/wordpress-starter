@@ -3,8 +3,23 @@
 requirejs.config({
     baseUrl: 'wp-content/themes/_mrtngtt/bower_components',
     paths: {
-        'component': '../scripts/component',
-        'page': '../scripts/page'
+        'component_ui'  : '../scripts/component_ui',
+        'boot'          : '../scripts/boot',
+        'lodash'        : 'lodash/dist/lodash.min',
+        'pjax'          : 'jquery-pjax/jquery.pjax',
+        'nprogress'     : 'nprogress/nprogress',
+        'foundation'    : 'foundation/js/foundation.min'
+    },
+    shim: {
+        'lodash': {
+            exports: '_'
+        },
+        'pjax': {
+            exports: 'jQuery.fn.pjax'
+        },
+        'nprogress': {
+            exports: 'nprogress'
+        }
     }
 });
 
@@ -17,11 +32,11 @@ require(
         'flight/lib/debug'
     ],
 
-    function(compose, registry, advice, withLogging, debug) {
+    function(compose, registry, advice, withLogging, debug, _) {
         debug.enable(true);
         compose.mixin(registry, [advice.withAdvice]);
 
-        require(['page/default'], function(initializeDefault) {
+        require(['boot/page'], function(initializeDefault) {
             initializeDefault();
         });
     }

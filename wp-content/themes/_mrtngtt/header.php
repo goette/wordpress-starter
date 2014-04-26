@@ -21,18 +21,22 @@
 <body <?php body_class(); ?>>
 <div id="page" class="hfeed site">
 
-	<header id="masthead" class="site-header" role="banner">
-		<div class="site-branding">
-			<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-			<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
-		</div>
+    <header id="masthead" class="contain-to-grid site-header" role="banner">
+        <nav id="site-navigation" class="js-pjax-nav top-bar" role="navigation" data-topbar>
+            <ul class="title-area">
+                <li class="name">
+                    <h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+                </li>
+                <li class="toggle-topbar menu-icon"><a href="#"></a></li>
+            </ul>
+            <section class="top-bar-section">
+                <?php wp_nav_menu( array(
+                    'theme_location' => 'primary',
+                    'menu_class' => 'menu right',
+                    'container' => ''
+                )); ?>
+            </section>
+        </nav><!-- #site-navigation -->
+    </header><!-- #masthead -->
 
-		<nav id="site-navigation" class="main-navigation" role="navigation">
-			<h1 class="menu-toggle"><?php _e( 'Menu', '_mrtngtt' ); ?></h1>
-			<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', '_mrtngtt' ); ?></a>
-
-			<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
-		</nav><!-- #site-navigation -->
-	</header><!-- #masthead -->
-
-	<div id="content" class="site-content">
+    <div id="content" class="row site-content" data-pjax-container>

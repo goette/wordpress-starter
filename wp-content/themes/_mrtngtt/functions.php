@@ -124,3 +124,9 @@ require get_template_directory() . '/inc/customizer.php';
  * Load Jetpack compatibility file.
  */
 require get_template_directory() . '/inc/jetpack.php';
+
+function my_wp_nav_menu_args( $args = '' ) {
+	$args['container'] = false;
+	return $args;
+}
+add_filter( 'wp_nav_menu_args', 'my_wp_nav_menu_args' );
