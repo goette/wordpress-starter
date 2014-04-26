@@ -1,0 +1,33 @@
+body {
+    font-size: $base-font-size;
+    background-color: yellow;
+    font-family: $body-font-family;
+    font-weight: $body-font-weight;
+    color: $body-font-color;
+    line-height: $body-line-height;
+}
+
+a {
+    color: $lightBlue;
+    &:hover {
+        color: $green;
+    }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: $body-font-color;
+}
+
+.sidebar h1,
+.content h1 {
+    font-size: 2em;
+}
+
+.green-headline {
+    color: $green;
+}

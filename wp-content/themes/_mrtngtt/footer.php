@@ -19,7 +19,16 @@
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 
-<?php wp_footer(); ?>
+<?php wp_footer(); ?> 
+
+<!--[if lt IE 9]>
+<script src="<?php echo get_template_directory_uri(); ?>/bower_components/es5-shim/es5-shim.js"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/bower_components/es5-shim/es5-sham.js"></script>
+<![endif]-->
+<script src="<?php echo get_template_directory_uri(); ?>/bower_components/jquery/dist/jquery.js"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/bower_components/requirejs/require.js" data-main="<?php echo get_template_directory_uri(); ?>/scripts/main.js"></script>
+
+<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 
 </body>
 </html>
