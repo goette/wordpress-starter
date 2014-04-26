@@ -31,7 +31,7 @@ gulp.task('styles', function () {
 });
 
 // Watch
-gulp.task('watch', ['connect'], function () {
+gulp.task('default', ['connect'], function () {
     gulp.watch([
         PATH + '*.php',
         PATH + 'styles/**/*.css',
