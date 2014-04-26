@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost:8889
--- Generation Time: Apr 26, 2014 at 11:00 AM
+-- Generation Time: Apr 26, 2014 at 07:33 PM
 -- Server version: 5.5.34
 -- PHP Version: 5.5.10
 
@@ -103,7 +103,7 @@ CREATE TABLE `wp_options` (
   `autoload` varchar(20) NOT NULL DEFAULT 'yes',
   PRIMARY KEY (`option_id`),
   UNIQUE KEY `option_name` (`option_name`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=138 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=156 ;
 
 --
 -- Dumping data for table `wp_options`
@@ -149,7 +149,7 @@ INSERT INTO `wp_options` (`option_id`, `option_name`, `option_value`, `autoload`
 (37, 'comment_max_links', '2', 'yes'),
 (38, 'gmt_offset', '0', 'yes'),
 (39, 'default_email_category', '1', 'yes'),
-(40, 'recently_edited', '', 'no'),
+(40, 'recently_edited', 'a:3:{i:0;s:82:"/Users/mrtngtt/Experiments/wordpress-starter/wp-content/themes/_mrtngtt/header.php";i:1;s:81:"/Users/mrtngtt/Experiments/wordpress-starter/wp-content/themes/_mrtngtt/style.css";i:2;s:0:"";}', 'no'),
 (41, 'template', '_mrtngtt', 'yes'),
 (42, 'stylesheet', '_mrtngtt', 'yes'),
 (43, 'comment_whitelist', '1', 'yes'),
@@ -189,8 +189,8 @@ INSERT INTO `wp_options` (`option_id`, `option_name`, `option_value`, `autoload`
 (77, 'comment_order', 'asc', 'yes'),
 (78, 'sticky_posts', 'a:0:{}', 'yes'),
 (79, 'widget_categories', 'a:2:{i:2;a:4:{s:5:"title";s:0:"";s:5:"count";i:0;s:12:"hierarchical";i:0;s:8:"dropdown";i:0;}s:12:"_multiwidget";i:1;}', 'yes'),
-(80, 'widget_text', 'a:0:{}', 'yes'),
-(81, 'widget_rss', 'a:0:{}', 'yes'),
+(80, 'widget_text', 'a:3:{i:1;a:0:{}i:3;a:3:{s:5:"title";s:8:"Hi There";s:4:"text";s:13:"You are crazy";s:6:"filter";b:0;}s:12:"_multiwidget";i:1;}', 'yes'),
+(81, 'widget_rss', 'a:2:{i:1;a:0:{}s:12:"_multiwidget";i:1;}', 'yes'),
 (82, 'uninstall_plugins', 'a:0:{}', 'no'),
 (83, 'timezone_string', '', 'yes'),
 (84, 'page_for_posts', '0', 'yes'),
@@ -204,10 +204,10 @@ INSERT INTO `wp_options` (`option_id`, `option_name`, `option_value`, `autoload`
 (92, 'widget_recent-comments', 'a:2:{i:2;a:2:{s:5:"title";s:0:"";s:6:"number";i:5;}s:12:"_multiwidget";i:1;}', 'yes'),
 (93, 'widget_archives', 'a:2:{i:2;a:3:{s:5:"title";s:0:"";s:5:"count";i:0;s:8:"dropdown";i:0;}s:12:"_multiwidget";i:1;}', 'yes'),
 (94, 'widget_meta', 'a:2:{i:2;a:1:{s:5:"title";s:0:"";}s:12:"_multiwidget";i:1;}', 'yes'),
-(95, 'sidebars_widgets', 'a:5:{s:19:"wp_inactive_widgets";a:0:{}s:9:"sidebar-1";a:6:{i:0;s:8:"search-2";i:1;s:14:"recent-posts-2";i:2;s:17:"recent-comments-2";i:3;s:10:"archives-2";i:4;s:12:"categories-2";i:5;s:6:"meta-2";}s:9:"sidebar-2";a:0:{}s:9:"sidebar-3";a:0:{}s:13:"array_version";i:3;}', 'yes'),
+(95, 'sidebars_widgets', 'a:5:{s:19:"wp_inactive_widgets";a:0:{}s:9:"sidebar-1";a:7:{i:0;s:8:"search-2";i:1;s:14:"recent-posts-2";i:2;s:17:"recent-comments-2";i:3;s:10:"archives-2";i:4;s:12:"categories-2";i:5;s:6:"meta-2";i:6;s:6:"text-3";}s:9:"sidebar-2";a:0:{}s:9:"sidebar-3";a:0:{}s:13:"array_version";i:3;}', 'yes'),
 (96, 'cron', 'a:4:{i:1398539297;a:3:{s:16:"wp_version_check";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:10:"twicedaily";s:4:"args";a:0:{}s:8:"interval";i:43200;}}s:17:"wp_update_plugins";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:10:"twicedaily";s:4:"args";a:0:{}s:8:"interval";i:43200;}}s:16:"wp_update_themes";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:10:"twicedaily";s:4:"args";a:0:{}s:8:"interval";i:43200;}}}i:1398541620;a:1:{s:20:"wp_maybe_auto_update";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:10:"twicedaily";s:4:"args";a:0:{}s:8:"interval";i:43200;}}}i:1398582923;a:1:{s:19:"wp_scheduled_delete";a:1:{s:32:"40cd750bba9870f18aada2478b24840a";a:3:{s:8:"schedule";s:5:"daily";s:4:"args";a:0:{}s:8:"interval";i:86400;}}}s:7:"version";i:2;}', 'yes'),
 (98, '_site_transient_update_core', 'O:8:"stdClass":4:{s:7:"updates";a:1:{i:0;O:8:"stdClass":10:{s:8:"response";s:6:"latest";s:8:"download";s:57:"https://downloads.wordpress.org/release/wordpress-3.9.zip";s:6:"locale";s:5:"en_US";s:8:"packages";O:8:"stdClass":5:{s:4:"full";s:57:"https://downloads.wordpress.org/release/wordpress-3.9.zip";s:10:"no_content";b:0;s:11:"new_bundled";b:0;s:7:"partial";b:0;s:8:"rollback";b:0;}s:7:"current";s:3:"3.9";s:7:"version";s:3:"3.9";s:11:"php_version";s:5:"5.2.4";s:13:"mysql_version";s:3:"5.0";s:11:"new_bundled";s:3:"3.8";s:15:"partial_version";s:0:"";}}s:12:"last_checked";i:1398502792;s:15:"version_checked";s:3:"3.9";s:12:"translations";a:0:{}}', 'yes'),
-(103, '_site_transient_update_themes', 'O:8:"stdClass":4:{s:12:"last_checked";i:1398502809;s:7:"checked";a:1:{s:8:"_mrtngtt";s:9:"1.0-wpcom";}s:8:"response";a:0:{}s:12:"translations";a:0:{}}', 'yes'),
+(103, '_site_transient_update_themes', 'O:8:"stdClass":4:{s:12:"last_checked";i:1398519885;s:7:"checked";a:1:{s:8:"_mrtngtt";s:9:"1.0-wpcom";}s:8:"response";a:0:{}s:12:"translations";a:0:{}}', 'yes'),
 (104, '_site_transient_timeout_browser_732d6afb3896a5fe3a8f2ce34decc56a', '1399101324', 'yes'),
 (105, '_site_transient_browser_732d6afb3896a5fe3a8f2ce34decc56a', 'a:9:{s:8:"platform";s:9:"Macintosh";s:4:"name";s:6:"Chrome";s:7:"version";s:13:"34.0.1847.116";s:10:"update_url";s:28:"http://www.google.com/chrome";s:7:"img_src";s:49:"http://s.wordpress.org/images/browsers/chrome.png";s:11:"img_src_ssl";s:48:"https://wordpress.org/images/browsers/chrome.png";s:15:"current_version";s:2:"18";s:7:"upgrade";b:0;s:8:"insecure";b:0;}', 'yes'),
 (107, 'can_compress_scripts', '1', 'yes'),
@@ -233,14 +233,22 @@ INSERT INTO `wp_options` (`option_id`, `option_name`, `option_value`, `autoload`
 (123, '_transient_dash_4077549d03da2e451c8b5f002294ff51', '<div class="rss-widget"><ul><li><a class=''rsswidget'' href=''http://wordpress.org/news/2014/04/smith/''>WordPress 3.9 “Smith”</a> <span class="rss-date">April 16, 2014</span><div class="rssSummary">Version 3.9 of WordPress, named “Smith” in honor of jazz organist Jimmy Smith, is available for download or update in your WordPress dashboard. This release features a number of refinements that we hope you’ll love. A smoother media editing experience Improved visual editing The updated visual editor has improved speed, accessibility, and mobile support. You</div></li></ul></div><div class="rss-widget"><ul><li><a class=''rsswidget'' href=''http://wptavern.com/how-to-repair-a-crashed-wordpress-posts-table?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=how-to-repair-a-crashed-wordpress-posts-table'' title=''photo credit: Code &amp; Martini by Ivana Vasilj – cc license Every now and then the WordPress posts table will crash and screw up your website. Why does this happen? It’s not always clear how tables get corrupted, although it can usually be attributed to an unexpected event, such as the MySQL server or the server host getting killed in the middle of an upda''>WPTavern: How to Repair a Crashed WordPress Posts Table</a></li><li><a class=''rsswidget'' href=''http://wptavern.com/wordpress-code-reference-is-now-live?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=wordpress-code-reference-is-now-live'' title=''Siobhan McKeown announced that the first version of the WordPress Code Reference is now live. It’s still in the very early stages of development but is now out in the wild so that people can help contribute. Go try it out to see how easy it is to search the WordPress code base. The reference was created as part of the devhub project to make it easy for devel''>WPTavern: WordPress Code Reference is Now Live</a></li><li><a class=''rsswidget'' href=''http://wptavern.com/interface-a-free-responsive-business-theme-for-wordpress?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=interface-a-free-responsive-business-theme-for-wordpress'' title=''Interface is a new business theme in the WordPress Themes Directory, created by Theme Horse, the same folks behind the popular Clean Retina and Attitude themes that have more than 80,000 downloads combined. If you need to set up a simple business site and you’re into the flat-style mint green design trend, then the new Interface theme might be just the ticke''>WPTavern: Interface: A Free Responsive Business Theme for WordPress</a></li></ul></div><div class="rss-widget"><ul><li class=''dashboard-news-plugin''><span>Popular Plugin:</span> <a href=''http://wordpress.org/plugins/advanced-custom-fields/'' class=''dashboard-news-plugin-link''>Advanced Custom Fields</a>&nbsp;<span>(<a href=''plugin-install.php?tab=plugin-information&amp;plugin=advanced-custom-fields&amp;_wpnonce=5ded72544a&amp;TB_iframe=true&amp;width=600&amp;height=800'' class=''thickbox'' title=''Advanced Custom Fields''>Install</a>)</span></li></ul></div>', 'no'),
 (124, 'theme_mods_twentyfourteen', 'a:1:{s:16:"sidebars_widgets";a:2:{s:4:"time";i:1398496533;s:4:"data";a:4:{s:19:"wp_inactive_widgets";a:0:{}s:9:"sidebar-1";a:6:{i:0;s:8:"search-2";i:1;s:14:"recent-posts-2";i:2;s:17:"recent-comments-2";i:3;s:10:"archives-2";i:4;s:12:"categories-2";i:5;s:6:"meta-2";}s:9:"sidebar-2";a:0:{}s:9:"sidebar-3";a:0:{}}}}', 'yes'),
 (125, 'current_theme', '_mrtngtt', 'yes'),
-(126, 'theme_mods__mrtngtt', 'a:1:{i:0;b:0;}', 'yes'),
+(126, 'theme_mods__mrtngtt', 'a:7:{i:0;b:0;s:16:"background_color";s:6:"ffffff";s:16:"background_image";s:0:"";s:17:"background_repeat";s:6:"repeat";s:21:"background_position_x";s:4:"left";s:21:"background_attachment";s:5:"fixed";s:18:"nav_menu_locations";a:1:{s:7:"primary";i:2;}}', 'yes'),
 (127, 'theme_switched', '', 'yes'),
 (130, 'recently_activated', 'a:1:{s:24:"wordpress-seo/wp-seo.php";i:1398502463;}', 'yes'),
 (131, 'acf_version', '4.3.7', 'yes'),
-(132, '_site_transient_timeout_theme_roots', '1398504192', 'yes'),
-(133, '_site_transient_theme_roots', 'a:1:{s:8:"_mrtngtt";s:7:"/themes";}', 'yes'),
 (135, 'wpseo_titles', 'a:60:{s:10:"title_test";i:0;s:17:"forcerewritetitle";b:0;s:14:"hide-feedlinks";b:0;s:12:"hide-rsdlink";b:0;s:14:"hide-shortlink";b:0;s:16:"hide-wlwmanifest";b:0;s:5:"noodp";b:0;s:6:"noydir";b:0;s:15:"usemetakeywords";b:0;s:16:"title-home-wpseo";s:42:"%%sitename%% %%page%% %%sep%% %%sitedesc%%";s:18:"title-author-wpseo";s:0:"";s:19:"title-archive-wpseo";s:38:"%%date%% %%page%% %%sep%% %%sitename%%";s:18:"title-search-wpseo";s:0:"";s:15:"title-404-wpseo";s:0:"";s:19:"metadesc-home-wpseo";s:0:"";s:21:"metadesc-author-wpseo";s:0:"";s:22:"metadesc-archive-wpseo";s:0:"";s:18:"metakey-home-wpseo";s:0:"";s:20:"metakey-author-wpseo";s:0:"";s:22:"noindex-subpages-wpseo";b:0;s:20:"noindex-author-wpseo";b:0;s:21:"noindex-archive-wpseo";b:1;s:14:"disable-author";b:0;s:12:"disable-date";b:0;s:10:"title-post";s:39:"%%title%% %%page%% %%sep%% %%sitename%%";s:13:"metadesc-post";s:0:"";s:12:"metakey-post";s:0:"";s:12:"noindex-post";b:0;s:17:"noauthorship-post";b:0;s:13:"showdate-post";b:0;s:16:"hideeditbox-post";b:0;s:10:"title-page";s:39:"%%title%% %%page%% %%sep%% %%sitename%%";s:13:"metadesc-page";s:0:"";s:12:"metakey-page";s:0:"";s:12:"noindex-page";b:0;s:17:"noauthorship-page";b:1;s:13:"showdate-page";b:0;s:16:"hideeditbox-page";b:0;s:16:"title-attachment";s:39:"%%title%% %%page%% %%sep%% %%sitename%%";s:19:"metadesc-attachment";s:0:"";s:18:"metakey-attachment";s:0:"";s:18:"noindex-attachment";b:0;s:23:"noauthorship-attachment";b:1;s:19:"showdate-attachment";b:0;s:22:"hideeditbox-attachment";b:0;s:18:"title-tax-category";s:53:"%%term_title%% Archives %%page%% %%sep%% %%sitename%%";s:21:"metadesc-tax-category";s:0:"";s:20:"metakey-tax-category";s:0:"";s:24:"hideeditbox-tax-category";b:0;s:20:"noindex-tax-category";b:0;s:18:"title-tax-post_tag";s:53:"%%term_title%% Archives %%page%% %%sep%% %%sitename%%";s:21:"metadesc-tax-post_tag";s:0:"";s:20:"metakey-tax-post_tag";s:0:"";s:24:"hideeditbox-tax-post_tag";b:0;s:20:"noindex-tax-post_tag";b:0;s:21:"title-tax-post_format";s:53:"%%term_title%% Archives %%page%% %%sep%% %%sitename%%";s:24:"metadesc-tax-post_format";s:0:"";s:23:"metakey-tax-post_format";s:0:"";s:27:"hideeditbox-tax-post_format";b:0;s:23:"noindex-tax-post_format";b:1;}', 'yes'),
-(136, 'wpseo', 'a:18:{s:14:"blocking_files";a:0:{}s:26:"ignore_blog_public_warning";b:1;s:31:"ignore_meta_description_warning";b:0;s:20:"ignore_page_comments";b:0;s:16:"ignore_permalink";b:0;s:11:"ignore_tour";b:0;s:15:"ms_defaults_set";b:0;s:23:"theme_description_found";s:0:"";s:21:"theme_has_description";b:0;s:19:"tracking_popup_done";b:0;s:7:"version";s:7:"1.5.2.8";s:11:"alexaverify";s:0:"";s:20:"disableadvanced_meta";b:1;s:12:"googleverify";s:0:"";s:8:"msverify";s:0:"";s:15:"pinterestverify";s:0:"";s:12:"yandexverify";s:0:"";s:14:"yoast_tracking";b:0;}', 'yes');
+(136, 'wpseo', 'a:18:{s:14:"blocking_files";a:0:{}s:26:"ignore_blog_public_warning";b:1;s:31:"ignore_meta_description_warning";b:0;s:20:"ignore_page_comments";b:0;s:16:"ignore_permalink";b:0;s:11:"ignore_tour";b:0;s:15:"ms_defaults_set";b:0;s:23:"theme_description_found";s:0:"";s:21:"theme_has_description";b:0;s:19:"tracking_popup_done";b:0;s:7:"version";s:7:"1.5.2.8";s:11:"alexaverify";s:0:"";s:20:"disableadvanced_meta";b:1;s:12:"googleverify";s:0:"";s:8:"msverify";s:0:"";s:15:"pinterestverify";s:0:"";s:12:"yandexverify";s:0:"";s:14:"yoast_tracking";b:0;}', 'yes'),
+(140, '_site_transient_update_plugins', 'O:8:"stdClass":3:{s:12:"last_checked";i:1398502915;s:8:"response";a:0:{}s:12:"translations";a:0:{}}', 'yes'),
+(141, 'widget_pages', 'a:2:{i:1;a:0:{}s:12:"_multiwidget";i:1;}', 'yes'),
+(142, 'widget_calendar', 'a:2:{i:1;a:0:{}s:12:"_multiwidget";i:1;}', 'yes'),
+(143, 'widget_tag_cloud', 'a:2:{i:1;a:0:{}s:12:"_multiwidget";i:1;}', 'yes'),
+(144, 'widget_nav_menu', 'a:2:{i:1;a:0:{}s:12:"_multiwidget";i:1;}', 'yes'),
+(151, '_site_transient_timeout_theme_roots', '1398534487', 'yes'),
+(152, '_site_transient_theme_roots', 'a:1:{s:8:"_mrtngtt";s:7:"/themes";}', 'yes'),
+(153, 'nav_menu_options', 'a:2:{i:0;b:0;s:8:"auto_add";a:0:{}}', 'yes'),
+(154, '_transient_is_multi_author', '0', 'yes'),
+(155, '_transient__mrtngtt_categories', '1', 'yes');
 
 -- --------------------------------------------------------
 
@@ -256,7 +264,7 @@ CREATE TABLE `wp_postmeta` (
   PRIMARY KEY (`meta_id`),
   KEY `post_id` (`post_id`),
   KEY `meta_key` (`meta_key`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=20 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=74 ;
 
 --
 -- Dumping data for table `wp_postmeta`
@@ -281,7 +289,59 @@ INSERT INTO `wp_postmeta` (`meta_id`, `post_id`, `meta_key`, `meta_value`) VALUE
 (16, 5, '_menu_item_classes', 'a:1:{i:0;s:0:"";}'),
 (17, 5, '_menu_item_xfn', ''),
 (18, 5, '_menu_item_url', ''),
-(19, 5, '_menu_item_orphaned', '1398502489');
+(19, 5, '_menu_item_orphaned', '1398502489'),
+(20, 6, '_menu_item_type', 'custom'),
+(21, 6, '_menu_item_menu_item_parent', '0'),
+(22, 6, '_menu_item_object_id', '6'),
+(23, 6, '_menu_item_object', 'custom'),
+(24, 6, '_menu_item_target', ''),
+(25, 6, '_menu_item_classes', 'a:1:{i:0;s:0:"";}'),
+(26, 6, '_menu_item_xfn', ''),
+(27, 6, '_menu_item_url', 'http://mrtngtt.dev/'),
+(28, 6, '_menu_item_orphaned', '1398506825'),
+(29, 7, '_menu_item_type', 'post_type'),
+(30, 7, '_menu_item_menu_item_parent', '0'),
+(31, 7, '_menu_item_object_id', '2'),
+(32, 7, '_menu_item_object', 'page'),
+(33, 7, '_menu_item_target', ''),
+(34, 7, '_menu_item_classes', 'a:1:{i:0;s:0:"";}'),
+(35, 7, '_menu_item_xfn', ''),
+(36, 7, '_menu_item_url', ''),
+(37, 7, '_menu_item_orphaned', '1398506825'),
+(38, 8, '_menu_item_type', 'custom'),
+(39, 8, '_menu_item_menu_item_parent', '0'),
+(40, 8, '_menu_item_object_id', '8'),
+(41, 8, '_menu_item_object', 'custom'),
+(42, 8, '_menu_item_target', ''),
+(43, 8, '_menu_item_classes', 'a:1:{i:0;s:0:"";}'),
+(44, 8, '_menu_item_xfn', ''),
+(45, 8, '_menu_item_url', 'http://mrtngtt.dev/'),
+(46, 8, '_menu_item_orphaned', '1398532649'),
+(47, 9, '_menu_item_type', 'post_type'),
+(48, 9, '_menu_item_menu_item_parent', '0'),
+(49, 9, '_menu_item_object_id', '2'),
+(50, 9, '_menu_item_object', 'page'),
+(51, 9, '_menu_item_target', ''),
+(52, 9, '_menu_item_classes', 'a:1:{i:0;s:0:"";}'),
+(53, 9, '_menu_item_xfn', ''),
+(54, 9, '_menu_item_url', ''),
+(55, 9, '_menu_item_orphaned', '1398532649'),
+(56, 10, '_menu_item_type', 'custom'),
+(57, 10, '_menu_item_menu_item_parent', '0'),
+(58, 10, '_menu_item_object_id', '10'),
+(59, 10, '_menu_item_object', 'custom'),
+(60, 10, '_menu_item_target', ''),
+(61, 10, '_menu_item_classes', 'a:1:{i:0;s:0:"";}'),
+(62, 10, '_menu_item_xfn', ''),
+(63, 10, '_menu_item_url', 'http://mrtngtt.dev/'),
+(65, 11, '_menu_item_type', 'post_type'),
+(66, 11, '_menu_item_menu_item_parent', '0'),
+(67, 11, '_menu_item_object_id', '2'),
+(68, 11, '_menu_item_object', 'page'),
+(69, 11, '_menu_item_target', ''),
+(70, 11, '_menu_item_classes', 'a:1:{i:0;s:0:"";}'),
+(71, 11, '_menu_item_xfn', ''),
+(72, 11, '_menu_item_url', '');
 
 -- --------------------------------------------------------
 
@@ -318,7 +378,7 @@ CREATE TABLE `wp_posts` (
   KEY `type_status_date` (`post_type`,`post_status`,`post_date`,`ID`),
   KEY `post_parent` (`post_parent`),
   KEY `post_author` (`post_author`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=6 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=12 ;
 
 --
 -- Dumping data for table `wp_posts`
@@ -329,7 +389,13 @@ INSERT INTO `wp_posts` (`ID`, `post_author`, `post_date`, `post_date_gmt`, `post
 (2, 1, '2014-04-26 07:08:11', '2014-04-26 07:08:11', 'This is an example page. It''s different from a blog post because it will stay in one place and will show up in your site navigation (in most themes). Most people start with an About page that introduces them to potential site visitors. It might say something like this:\n\n<blockquote>Hi there! I''m a bike messenger by day, aspiring actor by night, and this is my blog. I live in Los Angeles, have a great dog named Jack, and I like pi&#241;a coladas. (And gettin'' caught in the rain.)</blockquote>\n\n...or something like this:\n\n<blockquote>The XYZ Doohickey Company was founded in 1971, and has been providing quality doohickeys to the public ever since. Located in Gotham City, XYZ employs over 2,000 people and does all kinds of awesome things for the Gotham community.</blockquote>\n\nAs a new WordPress user, you should go to <a href="http://mrtngtt.dev/wp-admin/">your dashboard</a> to delete this page and create new pages for your content. Have fun!', 'Sample Page', '', 'publish', 'open', 'open', '', 'sample-page', '', '', '2014-04-26 07:08:11', '2014-04-26 07:08:11', '', 0, 'http://mrtngtt.dev/?page_id=2', 0, 'page', '', 0),
 (3, 1, '2014-04-26 07:15:24', '0000-00-00 00:00:00', '', 'Auto Draft', '', 'auto-draft', 'open', 'open', '', '', '', '', '2014-04-26 07:15:24', '0000-00-00 00:00:00', '', 0, 'http://mrtngtt.dev/?p=3', 0, 'post', '', 0),
 (4, 1, '2014-04-26 08:54:49', '0000-00-00 00:00:00', '', 'Home', '', 'draft', 'open', 'open', '', '', '', '', '2014-04-26 08:54:49', '0000-00-00 00:00:00', '', 0, 'http://mrtngtt.dev/?p=4', 1, 'nav_menu_item', '', 0),
-(5, 1, '2014-04-26 08:54:49', '0000-00-00 00:00:00', ' ', '', '', 'draft', 'open', 'open', '', '', '', '', '2014-04-26 08:54:49', '0000-00-00 00:00:00', '', 0, 'http://mrtngtt.dev/?p=5', 1, 'nav_menu_item', '', 0);
+(5, 1, '2014-04-26 08:54:49', '0000-00-00 00:00:00', ' ', '', '', 'draft', 'open', 'open', '', '', '', '', '2014-04-26 08:54:49', '0000-00-00 00:00:00', '', 0, 'http://mrtngtt.dev/?p=5', 1, 'nav_menu_item', '', 0),
+(6, 1, '2014-04-26 10:07:05', '0000-00-00 00:00:00', '', 'Home', '', 'draft', 'open', 'open', '', '', '', '', '2014-04-26 10:07:05', '0000-00-00 00:00:00', '', 0, 'http://mrtngtt.dev/?p=6', 1, 'nav_menu_item', '', 0),
+(7, 1, '2014-04-26 10:07:05', '0000-00-00 00:00:00', ' ', '', '', 'draft', 'open', 'open', '', '', '', '', '2014-04-26 10:07:05', '0000-00-00 00:00:00', '', 0, 'http://mrtngtt.dev/?p=7', 1, 'nav_menu_item', '', 0),
+(8, 1, '2014-04-26 17:17:29', '0000-00-00 00:00:00', '', 'Home', '', 'draft', 'open', 'open', '', '', '', '', '2014-04-26 17:17:29', '0000-00-00 00:00:00', '', 0, 'http://mrtngtt.dev/?p=8', 1, 'nav_menu_item', '', 0),
+(9, 1, '2014-04-26 17:17:29', '0000-00-00 00:00:00', ' ', '', '', 'draft', 'open', 'open', '', '', '', '', '2014-04-26 17:17:29', '0000-00-00 00:00:00', '', 0, 'http://mrtngtt.dev/?p=9', 1, 'nav_menu_item', '', 0),
+(10, 1, '2014-04-26 17:19:49', '2014-04-26 17:19:49', '', 'Home', '', 'publish', 'open', 'open', '', 'home', '', '', '2014-04-26 17:20:00', '2014-04-26 17:20:00', '', 0, 'http://mrtngtt.dev/?p=10', 1, 'nav_menu_item', '', 0),
+(11, 1, '2014-04-26 17:19:49', '2014-04-26 17:19:49', ' ', '', '', 'publish', 'open', 'open', '', '11', '', '', '2014-04-26 17:20:00', '2014-04-26 17:20:00', '', 0, 'http://mrtngtt.dev/?p=11', 2, 'nav_menu_item', '', 0);
 
 -- --------------------------------------------------------
 
@@ -345,14 +411,15 @@ CREATE TABLE `wp_terms` (
   PRIMARY KEY (`term_id`),
   UNIQUE KEY `slug` (`slug`),
   KEY `name` (`name`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=2 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=3 ;
 
 --
 -- Dumping data for table `wp_terms`
 --
 
 INSERT INTO `wp_terms` (`term_id`, `name`, `slug`, `term_group`) VALUES
-(1, 'Uncategorized', 'uncategorized', 0);
+(1, 'Uncategorized', 'uncategorized', 0),
+(2, 'Menu 1', 'menu-1', 0);
 
 -- --------------------------------------------------------
 
@@ -373,7 +440,9 @@ CREATE TABLE `wp_term_relationships` (
 --
 
 INSERT INTO `wp_term_relationships` (`object_id`, `term_taxonomy_id`, `term_order`) VALUES
-(1, 1, 0);
+(1, 1, 0),
+(10, 2, 0),
+(11, 2, 0);
 
 -- --------------------------------------------------------
 
@@ -391,14 +460,15 @@ CREATE TABLE `wp_term_taxonomy` (
   PRIMARY KEY (`term_taxonomy_id`),
   UNIQUE KEY `term_id_taxonomy` (`term_id`,`taxonomy`),
   KEY `taxonomy` (`taxonomy`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=2 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=3 ;
 
 --
 -- Dumping data for table `wp_term_taxonomy`
 --
 
 INSERT INTO `wp_term_taxonomy` (`term_taxonomy_id`, `term_id`, `taxonomy`, `description`, `parent`, `count`) VALUES
-(1, 1, 'category', '', 0, 1);
+(1, 1, 'category', '', 0, 1),
+(2, 2, 'nav_menu', '', 0, 2);
 
 -- --------------------------------------------------------
 
@@ -421,15 +491,15 @@ CREATE TABLE `wp_usermeta` (
 --
 
 INSERT INTO `wp_usermeta` (`umeta_id`, `user_id`, `meta_key`, `meta_value`) VALUES
-(1, 1, 'first_name', ''),
-(2, 1, 'last_name', ''),
+(1, 1, 'first_name', 'Martin'),
+(2, 1, 'last_name', 'Götte'),
 (3, 1, 'nickname', 'mrtngtt'),
 (4, 1, 'description', ''),
-(5, 1, 'rich_editing', 'true'),
+(5, 1, 'rich_editing', 'false'),
 (6, 1, 'comment_shortcuts', 'false'),
 (7, 1, 'admin_color', 'fresh'),
 (8, 1, 'use_ssl', '0'),
-(9, 1, 'show_admin_bar_front', 'true'),
+(9, 1, 'show_admin_bar_front', 'false'),
 (10, 1, 'wp_capabilities', 'a:1:{s:13:"administrator";b:1;}'),
 (11, 1, 'wp_user_level', '10'),
 (12, 1, 'dismissed_wp_pointers', 'wp350_media,wp360_revisions,wp360_locks,wp390_widgets'),
@@ -465,4 +535,4 @@ CREATE TABLE `wp_users` (
 --
 
 INSERT INTO `wp_users` (`ID`, `user_login`, `user_pass`, `user_nicename`, `user_email`, `user_url`, `user_registered`, `user_activation_key`, `user_status`, `display_name`) VALUES
-(1, 'mrtngtt', '$P$BjyfA5J8Bz4IhNdvYEdiWX5OPTuNHo1', 'mrtngtt', 'mrtngtt@gmail.com', '', '2014-04-26 07:08:11', '', 0, 'mrtngtt');
+(1, 'mrtngtt', '$P$BjyfA5J8Bz4IhNdvYEdiWX5OPTuNHo1', 'mrtngtt', 'mrtngtt@gmail.com', 'http://github.com/mrtngtt', '2014-04-26 07:08:11', '', 0, 'mrtngtt');
