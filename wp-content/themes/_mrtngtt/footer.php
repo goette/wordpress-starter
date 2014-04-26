@@ -28,7 +28,12 @@
 <script src="<?php echo get_template_directory_uri(); ?>/bower_components/jquery/dist/jquery.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/bower_components/requirejs/require.js" data-main="<?php echo get_template_directory_uri(); ?>/scripts/main.js"></script>
 
-<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+<?php 
+$url = 'http://' . $_SERVER['SERVER_NAME'] . $_SERVER['REQUEST_URI'];
+if (false !== strpos($url, '.dev')) { ?>
+    <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+<?php } ?>
+
 
 </body>
 </html>
