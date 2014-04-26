@@ -1,4 +1,5 @@
 *.log
+.DS_Store
 node_modules
 .sass-cache
 wp-content/themes/_mrtngtt/bower_components
